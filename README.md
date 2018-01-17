@@ -1,2 +1,0 @@
-# tuyendung
-Hanh.Duc.Tuyen
