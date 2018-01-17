@@ -1,0 +1,27 @@
+[class*=col-]{
+	float: left;
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid black;
+	;
+}
+
+@mixin set-col($size){
+	@for $i from 1 to 13{
+		.col-#{$size}-#{$i}{
+			width: $i/12*100*1%;
+		}
+	}
+}
+
+@include set-col(l);
+
+@media only screen and (max-width: 800px) {
+	@include set-col(m);
+}
+
+@media only screen and (max-width: 400px) {
+	@include set-col(s);
+}
+
+
